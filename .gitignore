@@ -1,0 +1,23 @@
+# --- Operating System Files ---
+.DS_Store               # macOS folder metadata
+Thumbs.db               # Windows thumbnail cache
+desktop.ini             # Windows folder config
+
+# --- Editor & IDE Configs ---
+.vscode/                # VS Code workspace settings (keep .vscode/extensions.json if shared)
+.idea/                  # JetBrains IDEs (PyCharm, DataGrip)
+*.swp                   # Vim swap files
+*~                      # Backup files
+
+# --- Python / Local Environment (if you run scripts locally) ---
+__pycache__/
+*.pyc
+.env                    # Environment variables (NEVER commit secrets!)
+venv/
+.venv/
+
+# --- Snowflake / Data Artifacts ---
+*.csv                   # Avoid committing raw data exports
+*.xlsx
+*.parquet
+snowflake_session.log   # Local CLI logs
