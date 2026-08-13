@@ -159,7 +159,7 @@ CREATE OR REPLACE TABLE airline_dwh.audit.etl_log (
 );
 
 -- =============================================
--- STREAM ДЛЯ CDC
+-- STREAM FOR CDC
 -- =============================================
 CREATE OR REPLACE STREAM airline_dwh.raw.stream_airline_flights
 ON TABLE airline_dwh.raw.airline_flights;
